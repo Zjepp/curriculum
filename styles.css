@@ -172,10 +172,10 @@ li {
 }
 
 .skills p {
-  color: var(--primary-bg);
-  background-color: var(--h2);
+  color: var(--font);
+  background-color: var(--shadow-card);
   width: fit-content;
-  padding-right: 0.3rem;
-  padding-left: 0.3rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
   margin: auto;
 }
