@@ -175,7 +175,7 @@ li {
   color: var(--font);
   background-color: var(--shadow-card);
   width: fit-content;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding: 0.5rem 1.5rem;
   margin: auto;
+  font-weight: 600;
 }
