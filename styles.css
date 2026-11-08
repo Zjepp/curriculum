@@ -1,0 +1,181 @@
+:root {
+  --secondary-bg: #fca82b;
+  --primary-bg: #fdf7f5;
+  --h2: #2ba4fc;
+  --font: #1d2e3b;
+  --card-bg: #fde06b;
+  --shadow-card: #20bdab;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: var(--font);
+  background-color: var(--primary-bg);
+  margin: 0;
+}
+
+main {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header {
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  padding: auto;
+  background-color: var(--secondary-bg);
+}
+
+.header {
+  max-width: 80rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.header-left {
+  align-self: center;
+}
+
+.header-right {
+  padding: 0 2rem;
+  text-align: right;
+  font-size: 15px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin: 0;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--font);
+}
+
+header a:hover {
+  color: #3d3d06;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.icons a {
+  border-radius: 4px;
+  padding: 4px;
+  align-items: baseline;
+  display: flex;
+}
+
+.icons a:hover {
+  background-color: var(--h2);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.left,
+.right {
+  padding-top: 2rem;
+}
+
+.left {
+  padding-right: 2rem;
+}
+
+.left section {
+  border: #000000 solid 3px;
+  padding: 5px;
+  margin-bottom: 2vh;
+  box-shadow: var(--shadow-card) -7px 7px;
+  background-color: var(--card-bg);
+}
+
+.right section {
+  border: #000000 solid 3px;
+  padding: 5px;
+  margin-bottom: 2vh;
+  box-shadow: var(--shadow-card) -7px 7px;
+  background-color: var(--card-bg);
+}
+
+.right h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 5px;
+}
+
+h2 {
+  color: var(--h2);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 5px;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+.schooltime p {
+  font-style: italic;
+}
+.worktime p {
+  font-style: italic;
+  display: inline;
+}
+
+.worktime ul li {
+  font-style: italic;
+  margin: 0;
+}
+
+.skills {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3vh;
+}
+
+.skills div {
+  overflow: hidden;
+  width: fit-content;
+  border-radius: 15px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+  margin-left: 5px;
+  margin-top: 5px;
+  padding: 0px;
+}
+
+.skills p {
+  color: var(--primary-bg);
+  background-color: var(--h2);
+  width: fit-content;
+  padding-right: 0.3rem;
+  padding-left: 0.3rem;
+  margin: auto;
+}
