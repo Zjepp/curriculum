@@ -1,7 +1,7 @@
 :root {
   --secondary-bg: #fca82b;
   --primary-bg: #fdf7f5;
-  --h2: #2ba4fc;
+  --h2: #1d2e3b;
   --font: #1d2e3b;
   --card-bg: #fde06b;
   --shadow-card: #20bdab;
@@ -99,7 +99,7 @@ main {
 
 .left section {
   border: #000000 solid 3px;
-  padding: 5px;
+  padding: 1rem;
   margin-bottom: 2vh;
   box-shadow: var(--shadow-card) -7px 7px;
   background-color: var(--card-bg);
@@ -107,7 +107,7 @@ main {
 
 .right section {
   border: #000000 solid 3px;
-  padding: 5px;
+  padding: 1rem;
   margin-bottom: 2vh;
   box-shadow: var(--shadow-card) -7px 7px;
   background-color: var(--card-bg);
