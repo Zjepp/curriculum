@@ -53,8 +53,9 @@ header {
   display: flex;
   justify-self: end;
 }
-.header-right img {
-  margin: 0 0.5rem;
+.header-right svg {
+  margin: 0 0 0.5rem 0.5rem;
+  fill: #fff;
 }
 
 header h1 {
