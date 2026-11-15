@@ -1,10 +1,10 @@
 :root {
-  --secondary-bg: #fca82b;
-  --primary-bg: #fdf7f5;
-  --h2: #1d2e3b;
-  --font: #1d2e3b;
-  --card-bg: #fde06b;
-  --shadow-card: #20bdab;
+  --secondary-bg: #bf3f00;
+  --primary-bg: #f5f5f5;
+  --h2: #111111;
+  --font: #111111;
+  --card-bg: #ffffff;
+  --shadow-card: #ff5400;
 }
 
 body {
@@ -16,22 +16,22 @@ body {
 }
 
 main {
-  max-width: 80rem;
   margin: 0 auto;
-  padding: 1rem;
-  margin-top: 1rem;
+  max-width: min(100%, 1280px);
+  padding: clamp(8px, 1.25vw, 16px);
+  margin-top: clamp(8px, 1.25vw, 16px);
 }
 
 header {
   justify-content: space-between;
-  gap: 1rem;
-  padding: 1rem;
+  gap: clamp(8px, 1.25vw, 16px);
+  padding: clamp(8px, 1.25vw, 16px);
   padding: auto;
   background-color: var(--secondary-bg);
 }
 
 .header {
-  max-width: 80rem;
+  max-width: min(100%, 1280px);
   margin: auto;
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -42,7 +42,7 @@ header {
 }
 
 .header-right {
-  padding: 0 2rem;
+  padding: 0 clamp(16px, 2.5vw, 32px);
   text-align: right;
   font-size: 15px;
   margin-top: 2vh;
@@ -54,7 +54,7 @@ header {
   justify-self: end;
 }
 .header-right svg {
-  margin: 0 0 0.5rem 0.5rem;
+  margin: 0 0 clamp(4px, 0.6vw, 8px) clamp(4px, 0.6vw, 8px);
   fill: #fff;
 }
 
@@ -80,7 +80,7 @@ header a:hover {
 .icons {
   display: flex;
   justify-content: flex-end;
-  margin-top: 0.5rem;
+  margin-top: clamp(4px, 0.6vw, 8px);
 }
 
 .icons a {
@@ -103,16 +103,16 @@ main {
 
 .left,
 .right {
-  padding-top: 2rem;
+  padding-top: clamp(16px, 2.5vw, 32px);
 }
 
 .left {
-  padding-right: 2rem;
+  padding-right: clamp(16px, 2.5vw, 32px);
 }
 
 .left section {
   border: #000000 solid 3px;
-  padding: 1rem;
+  padding: clamp(8px, 1.25vw, 16px);
   margin-bottom: 2vh;
   box-shadow: var(--shadow-card) -10px 10px;
   background-color: var(--card-bg);
@@ -120,7 +120,7 @@ main {
 
 .right section {
   border: #000000 solid 3px;
-  padding: 1rem;
+  padding: clamp(8px, 1.25vw, 16px);
   margin-bottom: 2vh;
   box-shadow: var(--shadow-card) -10px 10px;
   background-color: var(--card-bg);
@@ -144,7 +144,7 @@ h3 {
 }
 
 ul {
-  margin-top: 0.5rem;
+  margin-bottom: clamp(4px, 0.5vw, 6px);
   padding-left: 1.2rem;
   list-style: none;
 }
@@ -188,7 +188,7 @@ li {
   color: var(--font);
   background-color: var(--shadow-card);
   width: fit-content;
-  padding: 0.5rem 1.5rem;
+  padding: clamp(4px, 0.6vw, 8px) clamp(12px, 1.9vw, 24px);
   margin: auto;
   font-weight: 600;
 }
@@ -197,8 +197,8 @@ li {
   position: absolute;
   right: 20px;
   align-items: center;
-  font-size: 2rem;
-  margin-top: 0.5rem;
+  font-size: clamp(20px, 2.5vw, 32px);
+  margin-top: clamp(4px, 0.6vw, 8px);
 }
 
 .btn {
