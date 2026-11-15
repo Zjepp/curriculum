@@ -26,17 +26,31 @@ header {
 .header {
   max-width: min(100%, 1280px);
   margin: auto;
-  display: grid;
+  display: flex;
+  justify-content: space-between;
   grid-template-columns: 2fr 1fr;
 }
 
+.foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
 .header-left {
-  align-self: center;
+  display: flex;
+  gap: 3vw;
+}
+
+.header-left div {
+  align-content: center;
 }
 
 .header-right {
   padding: 0 clamp(16px, 2.5vw, 32px);
   text-align: right;
+  align-self: center;
   font-size: 15px;
   margin-top: 2vh;
   margin-bottom: 2vh;
@@ -297,5 +311,9 @@ li p {
 
   section {
     margin: 3vh 0;
+  }
+
+  .foto {
+    display: none;
   }
 }
