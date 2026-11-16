@@ -21,6 +21,7 @@ header {
   padding: clamp(8px, 1.25vw, 16px);
   padding: auto;
   background-color: var(--secondary-bg);
+  color: var(--primary-bg);
 }
 
 .header {
@@ -78,7 +79,7 @@ header p {
 
 header a {
   text-decoration: none;
-  color: var(--font);
+  color: var(--primary-bg);
   transition: all 150ms linear;
 }
 
@@ -90,7 +91,7 @@ header a {
 }
 
 header a:hover {
-  color: var(--card-bg);
+  color: var(--font);
   transition: all 150ms linear;
 }
 
