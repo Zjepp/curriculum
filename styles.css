@@ -28,7 +28,8 @@ header {
   margin: auto;
   display: flex;
   justify-content: space-between;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px;
 }
 
 .foto {
@@ -36,6 +37,7 @@ header {
   height: 150px;
   border-radius: 100%;
   object-fit: cover;
+  display: none;
 }
 
 .header-left {
@@ -48,10 +50,10 @@ header {
 }
 
 .header-right {
-  padding: 0 clamp(16px, 2.5vw, 32px);
+  padding: 0;
   text-align: right;
   align-self: center;
-  font-size: 15px;
+  font-size: 13px;
   margin-top: 2vh;
   margin-bottom: 2vh;
 }
@@ -67,6 +69,7 @@ header {
 
 header h1 {
   margin: 0;
+  font-size: 1.5rem;
 }
 
 header p {
@@ -113,20 +116,24 @@ header a:hover {
 }
 
 main {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  flex-direction: column;
   margin: 0 clamp(0px, 2vw, 10px) 0 clamp(20px, 2vw, 25px);
   max-width: min(100%, 1280px);
   margin-top: clamp(8px, 1.25vw, 16px);
+  justify-self: center;
 }
 
 .left,
 .right {
-  padding-top: clamp(16px, 2.5vw, 32px);
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
-.left {
-  padding-right: clamp(16px, 2.5vw, 32px);
+section {
+  margin: 3vh 0;
 }
 
 .left section,
@@ -277,43 +284,42 @@ li p {
   margin: 0;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 601px) {
   .header {
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 8px;
+    grid-template-columns: 2fr 1fr;
+    gap: normal;
+  }
+
+  .foto {
+    display: inline;
+    align-self: center;
   }
 
   .header-right {
-    padding: 0;
-    font-size: 13px;
+    padding: 0 clamp(16px, 2.5vw, 32px);
+    font-size: 15px;
   }
 
   header h1 {
-    font-size: 1.5rem;
+    font-size: 2em;
   }
 
   main {
-    display: flex;
-    flex-direction: column;
-    margin: 0 clamp(0px, 2vw, 10px) 0 clamp(20px, 2vw, 25px);
-    max-width: min(100%, 1280px);
-    margin-top: clamp(8px, 1.25vw, 16px);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
   }
 
   .left,
   .right {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    padding-top: clamp(16px, 2.5vw, 32px);
+  }
 
-    margin: 0;
-    padding: 0;
+  .left {
+    padding-right: clamp(16px, 2.5vw, 32px);
   }
 
   section {
-    margin: 3vh 0;
-  }
-
-  .foto {
-    display: none;
+    margin: 0;
   }
 }
