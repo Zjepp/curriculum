@@ -308,6 +308,7 @@ li p {
   main {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    column-gap: 1vw;
   }
 
   .left,
@@ -320,7 +321,9 @@ li p {
     padding-right: clamp(16px, 2.5vw, 32px);
   }
 
-  section {
+  .left section,
+  .right section {
     margin: 0;
+    margin-bottom: 5vh;
   }
 }
